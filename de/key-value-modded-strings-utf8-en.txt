@@ -1,0 +1,66 @@
+//INSTRUCTIONS:
+//When you create any mod by creating a directory inside Steam, 
+//certain files will automatically copy over, including this 
+//file when you run the game. If you want to replace or add any
+//strings, place them in this file and when the mod is enabled, 
+//these strings will also be added. The english string file is 
+//a global fallback when a string cannot be found in the 
+//desired native language file.
+//
+//If you would like to modify an existing string, copy only
+//the strings you wish to modify into this file, and do not
+//delete them from the original file.
+
+
+
+28501 "Heaven of the Masses"
+28502 "Horn of Harvest"
+28503 "Statue of Legion"
+28504 "Wreath of Warfare"
+28505 "Wings of the Angel"
+28506 "Blessing of the Dragon"
+28507 "Bow of the Sharpshooter"
+28508 "Vessel of Shalassa"
+28509 "Fanaticism of Mechanism"
+28510 "Miracle of Faith"
+28511 "Arcanum of Byzantine"
+28512 "Tower of the Griffin"
+
+29501 "Research Heaven of the Masses (Population)"
+29502 "Research Horn of Harvest (Economy)"
+29503 "Research Statue of Legion (Training Speed)"
+29504 "Research Wreath of Warfare (Attack and Armor)"
+29505 "Research Wings of the Angel (Movement Speed)"
+29506 "Research Blessing of the Dragon (Hit Points)"
+29507 "Research Bow of the Sharpshooter (Archer)"
+29508 "Research Vessel of Shalassa (Navy)"
+29509 "Research Fanaticism of Mechanism (Siege Weapon)"
+29510 "Research Miracle of Faith (Monk)"
+29511 "Research Arcanum of Byzantine (Building)"
+29512 "Research Tower of the Griffin (Tower)"
+
+38501 "Heaven of\nthe Masses"
+38502 "Horn of\nHarvest"
+38503 "Statue of\nLegion"
+38504 "Wreath of\nWarfare"
+38505 "Wings of\nthe Angel"
+38506 "Blessing of\nthe Dragon"
+38507 "Bow of the\nSharpshooter"
+38508 "Vessel of\nShalassa"
+38509 "Fanaticism\nof Mechanism"
+38510 "Miracle of\nFaith"
+38511 "Arcanum of\nByzantine"
+38512 "Tower of\nthe Griffin"
+
+49501 "Research <b>Heaven of the Masses<b> (<cost>)\nPopulation cap +1000"
+49502 "Research <b>Horn of Harvest<b> (<cost>)\nVillager carry capacity +40, movement speed +100%, work rate +50%\nRelic gold production +400%\nTrade income +600%\nFarm food production +1450"
+49503 "Research <b>Statue of Legion<b> (<cost>)\nBarracks, stable, archery range and castle work rate +100%"
+49504 "Research <b>Wreath of Warfare<b> (<cost>)\nInfantry attack +7, armor +4; Cavalry attack +5, armor +6\nArcher armor +4; Cavalry archer armor +3\nHand cannoneer armor +4\nConquistador armor +4\nPetard armor +10"
+49505 "Research <b>Wings of the Angel<b> (<cost>)\nInfantry movement speed +100%; Cavalry movement speed +80%\nArcher movement speed +100%; Cavalry archer movement speed +80%\nHand cannoneer movement speed +100%\nConquistador movement speed +80%\nPetard movement speed +60%"
+49506 "Research <b>Blessing of the Dragon<b> (<cost>)\nInfantry hit points +80%; Cavalry hit points +60%\nArcher hit points +100%; Cavalry archer hit points +80%\nHand cannoneer hit points +100%\nConquistador hit points +80%\nPetard hit points +100%"
+49507 "Research <b>Bow of the Sharpshooter<b> (<cost>)\nArcher attack +5, bonus damage against building +3, range +4, attack speed +100%\nCavalry archer attack +4, bonus damage against building +3, range +4, attack speed +50%"
+49508 "Research <b>Vessel of Shalassa<b> (<cost>)\nDock work rate +100%\nWarship hit points +50%, attack speed +100%, armor +5, movement speed +50%\nTransport boat hit points +100%, carry capacity +40, movement speed +50%, armor +8"
+49509 "Research <b>Fanaticism of Mechanism<b> (<cost>)\nSiege workshop work rate +100%\nSiege weapon hit points +120%, armor +6, movement speed +50%, attack speed +50%\nScorpion hit points +80%, armor +4, range +3, movement speed +80%, attack speed +100%\nTrebuchet hit points +150%, armor +8, packing and unpacking speed +300%"
+49510 "Research <b>Miracle of Faith<b> (<cost>)\nMonastery work rate +100%\nMonk and missionary hit points +150%, armor +6, conversion range +5, healing range +6, healing rate +200%, movement speed +100%"
+49511 "Research <b>Arcanum of Byzantine<b> (<cost>)\nBuilding hit points +100%\nGate hit points +200%\nStone wall and palisade wall hit points +200%"
+49512 "Research <b>Tower of the Griffin<b> (<cost>)\nArrow tower and bombard tower hit points +200%, attack +10, range +6, attack speed +100%"
