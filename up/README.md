@@ -81,7 +81,7 @@ Delete (Disable Tech 264)
 
 ## New Techs & Effects
 
-### 901
+### 460
 
 ```text
 Internal Name = Heaven
@@ -94,7 +94,7 @@ Min Req Techs = 1
 Research Time = 50
 Icon = 107
 Button = 1
-Effect = 901
+Effect = 514
 Research Location = 276
 Full Tech Mode = 1
 Type = 3
@@ -104,7 +104,7 @@ Deduct = 1
 (1) Set resource 4 to 2000
 ```
 
-### 902
+### 461
 
 ```text
 Internal Name = Richness
@@ -117,7 +117,7 @@ Min Req Techs = 1
 Research Time = 50
 Icon = 107
 Button = 2
-Effect = 902
+Effect = 515
 Research Location = 276
 Full Tech Mode = 1
 Type = 3
@@ -133,7 +133,7 @@ Deduct = 1
 (1) Change resource 36 by 1450
 ```
 
-### 903
+### 462
 
 ```text
 Internal Name = Training
@@ -146,7 +146,7 @@ Min Req Techs = 1
 Research Time = 50
 Icon = 107
 Button = 3
-Effect = 903
+Effect = 516
 Research Location = 276
 Full Tech Mode = 1
 Type = 3
@@ -159,7 +159,7 @@ Deduct = 1
 (5) Multiply attr 13 by 2 for unit 82
 ```
 
-### 904
+### 463
 
 ```text
 Internal Name = Flower
@@ -172,7 +172,7 @@ Min Req Techs = 1
 Research Time = 50
 Icon = 107
 Button = 4
-Effect = 904
+Effect = 517
 Research Location = 276
 Full Tech Mode = 1
 Type = 3
@@ -200,7 +200,7 @@ Deduct = 1
 (4) Change armor type 3 by 10 for class 35
 ```
 
-### 905
+### 464
 
 ```text
 Internal Name = Wing
@@ -213,7 +213,7 @@ Min Req Techs = 1
 Research Time = 50
 Icon = 107
 Button = 5
-Effect = 905
+Effect = 518
 Research Location = 276
 Full Tech Mode = 1
 Type = 3
@@ -230,7 +230,7 @@ Deduct = 1
 (5) Multiply attr 5 by 1.6 for class 35
 ```
 
-### 906
+### 465
 
 ```text
 Internal Name = Dragon
@@ -243,7 +243,7 @@ Min Req Techs = 1
 Research Time = 50
 Icon = 107
 Button = 6
-Effect = 906
+Effect = 519
 Research Location = 276
 Full Tech Mode = 1
 Type = 3
@@ -260,7 +260,7 @@ Deduct = 1
 (5) Multiply attr 0 by 2 for class 35
 ```
 
-### 907
+### 466
 
 ```text
 Internal Name = Shadow
@@ -273,7 +273,7 @@ Min Req Techs = 1
 Research Time = 50
 Icon = 107
 Button = 7
-Effect = 907
+Effect = 520
 Research Location = 276
 Full Tech Mode = 1
 Type = 3
@@ -294,7 +294,7 @@ Deduct = 1
 (5) Multiply attr 10 by 0.666667 for class 36
 ```
 
-### 908
+### 467
 
 ```text
 Internal Name = Shalassa
@@ -307,7 +307,7 @@ Min Req Techs = 1
 Research Time = 50
 Icon = 107
 Button = 8
-Effect = 908
+Effect = 521
 Research Location = 276
 Full Tech Mode = 1
 Type = 3
@@ -328,7 +328,7 @@ Deduct = 1
 (4) Change attr 2 by 40 for class 20
 ```
 
-### 909
+### 468
 
 ```text
 Internal Name = Machine
@@ -341,7 +341,7 @@ Min Req Techs = 1
 Research Time = 50
 Icon = 107
 Button = 9
-Effect = 909
+Effect = 522
 Research Location = 276
 Full Tech Mode = 1
 Type = 3
@@ -372,7 +372,7 @@ Deduct = 1
 (5) Multiply attr 13 by 4 for class 51
 ```
 
-### 910
+### 469
 
 ```text
 Internal Name = Miracle
@@ -385,7 +385,7 @@ Min Req Techs = 1
 Research Time = 50
 Icon = 107
 Button = 10
-Effect = 910
+Effect = 523
 Research Location = 276
 Full Tech Mode = 1
 Type = 3
@@ -408,7 +408,7 @@ Deduct = 1
 (5) Multiply attr 5 by 2 for class 43
 ```
 
-### 911
+### 470
 
 ```text
 Internal Name = Byzantine
@@ -421,7 +421,7 @@ Min Req Techs = 1
 Research Time = 50
 Icon = 107
 Button = 11
-Effect = 911
+Effect = 524
 Research Location = 276
 Full Tech Mode = 1
 Type = 3
@@ -433,7 +433,7 @@ Deduct = 1
 (5) Multiply attr 0 by 3 for class 27
 ```
 
-### 912
+### 471
 
 ```text
 Internal Name = Griffin
@@ -446,7 +446,7 @@ Min Req Techs = 1
 Research Time = 50
 Icon = 107
 Button = 12
-Effect = 912
+Effect = 525
 Research Location = 276
 Full Tech Mode = 1
 Type = 3
@@ -466,22 +466,22 @@ Deduct = 1
 ### Techs
 
 ```text
-Tech Number = 901 - 906
+Tech Number = 460 - 465
 Status = 2
 Upper Building = 276
 Vertical Line # = 0
 Location in Age = 1
 Line Mode = 4
-Connected Techs = 907 - 912
+Connected Techs = 466 - 471
 Used Ages/Units/Techs = (1) 0 4
 
-Tech Number = 907 - 912
+Tech Number = 466 - 471
 Status = 2
 Upper Building = 276
 Vertical Line # = 0
 Location in Age = 2
 Line Mode = 4
-Used Ages/Units/Techs = (2) 0 4 + 3 901 - 906
+Used Ages/Units/Techs = (2) 0 4 + 3 460 - 465
 ```
 
 ### Ages
@@ -495,7 +495,7 @@ Add Connected Buildings 276
 #### Age 4
 
 ```text
-Add Connected Techs 901 - 912
+Add Connected Techs 460 - 471
 Delete Connected Buildings 276
 ```
 
@@ -505,7 +505,7 @@ Delete Connected Buildings 276
 
 ```text
 Line Mode = 5
-Add Connected Techs 901 - 912
+Add Connected Techs 460 - 471
 Used Ages/Units/Techs = (1) 0 3
 Total units and techs by age = 0 0 0 12 0
 Total units and techs at first in age = 0 0 0 6 0
