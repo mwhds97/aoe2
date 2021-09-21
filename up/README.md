@@ -5,7 +5,7 @@
 ```text
 icon = 72
 Special Graphic = 2896
-Standing Graphics = 2902 -1
+Standing Graphics = 2902
 Dying and Undead Graphics = 2899
 Walking and Running Graphics = 2906
 Attack Graphic = 2896
@@ -17,7 +17,7 @@ Dead Unit = 568
 ```text
 icon = 12
 Special Graphic = 2630
-Standing Graphics = 2635 2636
+Standing Graphics = 2636
 Dying and Undead Graphics = 2633
 Walking and Running Graphics = 2640
 Attack Graphic = 2630
