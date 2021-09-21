@@ -2,6 +2,7 @@
 
 ### 473
 
+```text
 icon = 72
 Special Graphic = 2896
 Standing Graphics = 2902 -1
@@ -9,9 +10,11 @@ Dying and Undead Graphics = 2899
 Walking and Running Graphics = 2906
 Attack Graphic = 2896
 Dead Unit = 568
+```
 
 ### 567
 
+```text
 icon = 12
 Special Graphic = 2630
 Standing Graphics = 2635 2636
@@ -19,50 +22,68 @@ Dying and Undead Graphics = 2633
 Walking and Running Graphics = 2640
 Attack Graphic = 2630
 Dead Unit = 500
+```
 
 ## Mod Effects
 
 ### 254
 
+```text
 Delete (Disable Tech 437)
+```
 
 ### 256
 
+```text
 Delete (Disable Tech 75)
 Delete (Disable Tech 435)
+```
 
 ### 257
 
+```text
 Delete (Disable Tech 12)
 Delete (Disable Tech 188)
 Delete (Disable Tech 230)
 Delete (Disable Tech 377)
 Modify (Change resource 91 by -150)
+```
 
 ### 258
 
+```text
 Delete (Disable Tech 435)
+```
 
 ### 276
 
+```text
 Delete (Disable Tech 373)
+```
 
 ### 447
 
+```text
 Delete (Disable Tech 429)
+```
 
 ### 448
 
+```text
 Add ((102) Disable Tech 265)
+```
 
 ### 449
 
+```text
 Delete (Disable Tech 264)
+```
 
 ## New Techs & Effects
 
 ### 901
 
+```text
 Internal Name = Heaven
 Language File Name = 28501
 Language File Description = 29501
@@ -81,9 +102,11 @@ Amount = 15000
 Deduct = 1
 
 (1) Set resource 4 to 2000
+```
 
 ### 902
 
+```text
 Internal Name = Richness
 Language File Name = 28502
 Language File Description = 29502
@@ -108,9 +131,11 @@ Deduct = 1
 (5) Multiply attr 13 by 7 for class 2
 (5) Multiply attr 13 by 7 for class 19
 (1) Change resource 36 by 1450
+```
 
 ### 903
 
+```text
 Internal Name = Training
 Language File Name = 28503
 Language File Description = 29503
@@ -132,9 +157,11 @@ Deduct = 1
 (5) Multiply attr 13 by 2 for unit 87
 (5) Multiply attr 13 by 2 for unit 101
 (5) Multiply attr 13 by 2 for unit 82
+```
 
 ### 904
 
+```text
 Internal Name = Flower
 Language File Name = 28504
 Language File Description = 29504
@@ -171,9 +198,11 @@ Deduct = 1
 (4) Change armor type 3 by 4 for class 23
 (4) Change armor type 4 by 10 for class 35
 (4) Change armor type 3 by 10 for class 35
+```
 
 ### 905
 
+```text
 Internal Name = Wing
 Language File Name = 28505
 Language File Description = 29505
@@ -199,9 +228,11 @@ Deduct = 1
 (5) Multiply attr 5 by 2 for class 44
 (5) Multiply attr 5 by 1.8 for class 23
 (5) Multiply attr 5 by 1.6 for class 35
+```
 
 ### 906
 
+```text
 Internal Name = Dragon
 Language File Name = 28506
 Language File Description = 29506
@@ -227,9 +258,11 @@ Deduct = 1
 (5) Multiply attr 0 by 2 for class 44
 (5) Multiply attr 0 by 1.8 for class 23
 (5) Multiply attr 0 by 2 for class 35
+```
 
 ### 907
 
+```text
 Internal Name = Shadow
 Language File Name = 28507
 Language File Description = 29507
@@ -259,9 +292,11 @@ Deduct = 1
 (4) Change attr 23 by 4 for class 36
 (4) Change attr 12 by 4 for class 36
 (5) Multiply attr 10 by 0.666667 for class 36
+```
 
 ### 908
 
+```text
 Internal Name = Shalassa
 Language File Name = 28508
 Language File Description = 29508
@@ -291,9 +326,11 @@ Deduct = 1
 (4) Change armor type 3 by 8 for class 20
 (5) Multiply attr 5 by 1.5 for class 20
 (4) Change attr 2 by 40 for class 20
+```
 
 ### 909
 
+```text
 Internal Name = Machine
 Language File Name = 28509
 Language File Description = 29509
@@ -333,9 +370,11 @@ Deduct = 1
 (4) Change armor type 4 by 8 for class 51
 (4) Change armor type 3 by 8 for class 51
 (5) Multiply attr 13 by 4 for class 51
+```
 
 ### 910
 
+```text
 Internal Name = Miracle
 Language File Name = 28510
 Language File Description = 29510
@@ -367,9 +406,11 @@ Deduct = 1
 (4) Change armor type 4 by 6 for class 43
 (4) Change armor type 3 by 6 for class 43
 (5) Multiply attr 5 by 2 for class 43
+```
 
 ### 911
 
+```text
 Internal Name = Byzantine
 Language File Name = 28511
 Language File Description = 29511
@@ -390,9 +431,11 @@ Deduct = 1
 (5) Multiply attr 0 by 2 for class 3
 (5) Multiply attr 0 by 3 for class 39
 (5) Multiply attr 0 by 3 for class 27
+```
 
 ### 912
 
+```text
 Internal Name = Griffin
 Language File Name = 28512
 Language File Description = 29512
@@ -416,11 +459,13 @@ Deduct = 1
 (4) Change attr 23 by 6 for class 52
 (4) Change attr 12 by 6 for class 52
 (5) Multiply attr 10 by 0.5 for class 52
+```
 
 ## Tech Trees
 
 ### Techs
 
+```text
 Tech Number = 901 - 906
 Status = 2
 Upper Building = 276
@@ -437,29 +482,41 @@ Vertical Line # = 0
 Location in Age = 2
 Line Mode = 4
 Used Ages/Units/Techs = (2) 0 4 + 3 901 - 906
+```
 
 ### Ages
 
-Age 4
+#### Age 3
+
+```text
+Add Connected Buildings 276
+```
+
+#### Age 4
+
+```text
 Add Connected Techs 901 - 912
 Delete Connected Buildings 276
-
-Age 3
-Add Connected Buildings 276
+```
 
 ### Buildings
 
-276
+#### 276
+
+```text
 Line Mode = 5
 Add Connected Techs 901 - 912
 Used Ages/Units/Techs = (1) 0 3
 Total units and techs by age = 0 0 0 12 0
 Total units and techs at first in age = 0 0 0 6 0
+```
 
 ## All Technology
 
+```text
 (102) Disable tech 291
 (102) Disable tech 293
 (102) Disable tech 294
 (102) Disable tech 338
 (102) Disable tech 356
+```
