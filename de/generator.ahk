@@ -1,7 +1,7 @@
 #SingleInstance, Force
 SetTitleMatchMode, RegEx
 CoordMode, Mouse, Screen
-SendMode Input
+SendMode, Input
 
 title_1 := "Advanced Genie Editor"
 title_2 := "AGE.+window 2"
@@ -249,7 +249,7 @@ _click(btn_effects_commands_delete)
 Return
 
 F2::
-techtrees := ["1", "3", "5", "7", "10", "31", "37", "42", "48", "254", "255", "256", "257", "258", "259", "260", "261", "262", "263", "275", "276", "277", "446", "447", "448", "449", "504", "646", "648", "650", "652", "706", "708", "710", "712", "782", "784", "801", "803"]
+techtrees := ["1", "3", "5", "7", "10", "31", "37", "42", "48", "254", "255", "256", "257", "258", "259", "260", "261", "262", "263", "275", "276", "277", "446", "447", "448", "449", "504", "646", "648", "650", "652", "706", "708", "710", "712", "782", "784", "801", "803", "838", "840", "842"]
 Loop, % techtrees.Length() {
   clear_input(input_techs_effects_left)
   _send(techtrees[A_Index])
@@ -259,38 +259,7 @@ Loop, % techtrees.Length() {
   shift_repeat("{End}", 1)
   _click(btn_effects_commands_delete)
   clear_input(input_effects_commands)
-  _click(btn_effects_commands_add)
-  clear_input(input_effects_commandtype)
-  _send("102")
-  _send("{Enter}")
-  clear_input(input_effects_attributes)
-  _send("291")
-  _click(btn_effects_commands_add)
-  clear_input(input_effects_commandtype)
-  _send("102")
-  _send("{Enter}")
-  clear_input(input_effects_attributes)
-  _send("293")
-  _click(btn_effects_commands_add)
-  clear_input(input_effects_commandtype)
-  _send("102")
-  _send("{Enter}")
-  clear_input(input_effects_attributes)
-  _send("294")
-  _click(btn_effects_commands_add)
-  clear_input(input_effects_commandtype)
-  _send("102")
-  _send("{Enter}")
-  clear_input(input_effects_attributes)
-  _send("338")
-  _click(btn_effects_commands_add)
-  clear_input(input_effects_commandtype)
-  _send("102")
-  _send("{Enter}")
-  clear_input(input_effects_attributes)
-  _send("356")
 }
-_send("{Enter}")
 Return
 
 ^LButton::

@@ -11,6 +11,9 @@ buildings = {
             "Age ID": 3,
             "Node Type": "BuildingTech",
         },
+        70: None,
+        199: None,
+        621: None,
     },
 }
 
@@ -265,59 +268,121 @@ for civ in data["civs"]:
     units_copy = deepcopy(units)
     techs_copy = deepcopy(techs)
     for ctb in civ["civ_techs_buildings"]:
-        if ctb["Node ID"] in buildings_copy["all"] and ctb["Node Type"] in [
-            "BuildingTech",
-            "BuildingNonTech",
-        ]:
+        if (
+            ctb["Node ID"] in buildings_copy["all"]
+            and ctb["Node Type"]
+            in [
+                "BuildingTech",
+                "BuildingNonTech",
+            ]
+            and buildings_copy["all"][ctb["Node ID"]] is not None
+        ):
             ctb.update(buildings_copy["all"][ctb["Node ID"]])
             del buildings_copy["all"][ctb["Node ID"]]
         if civ["civ_id"] in buildings_copy:
-            if ctb["Node ID"] in buildings_copy[civ["civ_id"]] and ctb["Node Type"] in [
-                "BuildingTech",
-                "BuildingNonTech",
-            ]:
+            if (
+                ctb["Node ID"] in buildings_copy[civ["civ_id"]]
+                and ctb["Node Type"]
+                in [
+                    "BuildingTech",
+                    "BuildingNonTech",
+                ]
+                and buildings_copy[civ["civ_id"]][ctb["Node ID"]] is not None
+            ):
                 ctb.update(buildings_copy[civ["civ_id"]][ctb["Node ID"]])
                 del buildings_copy[civ["civ_id"]][ctb["Node ID"]]
-    for _, building in buildings_copy["all"].items():
-        civ["civ_techs_buildings"].append(building)
-    if civ["civ_id"] in buildings_copy:
-        for _, building in buildings_copy[civ["civ_id"]].items():
+    buildings_to_delete = []
+    for id, building in buildings_copy["all"].items():
+        if building is not None:
             civ["civ_techs_buildings"].append(building)
+        else:
+            buildings_to_delete.append(id)
+    if civ["civ_id"] in buildings_copy:
+        for id, building in buildings_copy[civ["civ_id"]].items():
+            if building is not None:
+                civ["civ_techs_buildings"].append(building)
+            else:
+                buildings_to_delete.append(id)
+    civ["civ_techs_buildings"] = [
+        ctb
+        for ctb in civ["civ_techs_buildings"]
+        if ctb["Node Type"] in ["BuildingTech", "BuildingNonTech"]
+        and ctb["Node ID"] not in buildings_to_delete
+    ]
     for ctu in civ["civ_techs_units"]:
-        if ctu["Node ID"] in units_copy["all"] and ctu["Node Type"] in [
-            "Unit",
-            "UnitUpgrade",
-            "UniqueUnit",
-        ]:
-            ctu.update(units_copy["all"][ctu["Node ID"]])
-            del units_copy["all"][ctu["Node ID"]]
-        if ctu["Node ID"] in techs_copy["all"] and ctu["Node Type"] in ["Research"]:
-            ctu.update(techs_copy["all"][ctu["Node ID"]])
-            del techs_copy["all"][ctu["Node ID"]]
-        if civ["civ_id"] in units_copy:
-            if ctu["Node ID"] in units_copy[civ["civ_id"]] and ctu["Node Type"] in [
+        if (
+            ctu["Node ID"] in units_copy["all"]
+            and ctu["Node Type"]
+            in [
                 "Unit",
                 "UnitUpgrade",
                 "UniqueUnit",
-            ]:
+            ]
+            and units_copy["all"][ctu["Node ID"]] is not None
+        ):
+            ctu.update(units_copy["all"][ctu["Node ID"]])
+            del units_copy["all"][ctu["Node ID"]]
+        if (
+            ctu["Node ID"] in techs_copy["all"]
+            and ctu["Node Type"] in ["Research"]
+            and techs_copy["all"][ctu["Node ID"]] is not None
+        ):
+            ctu.update(techs_copy["all"][ctu["Node ID"]])
+            del techs_copy["all"][ctu["Node ID"]]
+        if civ["civ_id"] in units_copy:
+            if (
+                ctu["Node ID"] in units_copy[civ["civ_id"]]
+                and ctu["Node Type"]
+                in [
+                    "Unit",
+                    "UnitUpgrade",
+                    "UniqueUnit",
+                ]
+                and units_copy[civ["civ_id"]][ctu["Node ID"]] is not None
+            ):
                 ctu.update(units_copy[civ["civ_id"]][ctu["Node ID"]])
                 del units_copy[civ["civ_id"]][ctu["Node ID"]]
         if civ["civ_id"] in techs_copy:
-            if ctu["Node ID"] in techs_copy[civ["civ_id"]] and ctu["Node Type"] in [
-                "Research"
-            ]:
+            if (
+                ctu["Node ID"] in techs_copy[civ["civ_id"]]
+                and ctu["Node Type"] in ["Research"]
+                and techs_copy[civ["civ_id"]][ctu["Node ID"]] is not None
+            ):
                 ctu.update(techs_copy[civ["civ_id"]][ctu["Node ID"]])
                 del techs_copy[civ["civ_id"]][ctu["Node ID"]]
-    for _, unit in units_copy["all"].items():
-        civ["civ_techs_units"].append(unit)
-    if civ["civ_id"] in units_copy:
-        for _, unit in units_copy[civ["civ_id"]].items():
+    units_to_delete = []
+    techs_to_delete = []
+    for id, unit in units_copy["all"].items():
+        if unit is not None:
             civ["civ_techs_units"].append(unit)
-    for _, tech in techs_copy["all"].items():
-        civ["civ_techs_units"].append(tech)
-    if civ["civ_id"] in techs_copy:
-        for _, tech in techs_copy[civ["civ_id"]].items():
+        else:
+            units_to_delete.append(id)
+    if civ["civ_id"] in units_copy:
+        for id, unit in units_copy[civ["civ_id"]].items():
+            if unit is not None:
+                civ["civ_techs_units"].append(unit)
+            else:
+                units_to_delete.append(id)
+    for id, tech in techs_copy["all"].items():
+        if tech is not None:
             civ["civ_techs_units"].append(tech)
+        else:
+            techs_to_delete.append(id)
+    if civ["civ_id"] in techs_copy:
+        for id, tech in techs_copy[civ["civ_id"]].items():
+            if tech is not None:
+                civ["civ_techs_units"].append(tech)
+            else:
+                techs_to_delete.append(id)
+    civ["civ_techs_units"] = [
+        ctu
+        for ctu in civ["civ_techs_units"]
+        if (
+            ctu["Node Type"] in ["Unit", "UnitUpgrade", "UniqueUnit"]
+            and ctu["Node ID"] not in units_to_delete
+        )
+        or (ctu["Node Type"] in ["Research"] and ctu["Node ID"] not in techs_to_delete)
+    ]
 with open(
     os.path.join(script_dir, "civTechTrees_A.json"),
     "w",
